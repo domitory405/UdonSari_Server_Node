@@ -1,7 +1,7 @@
 const testDao = require('../dao/testDao');
 
 async function getTest() {
-    const testData = await testDao.selectTestData();
+    const testData = await testDao.selectTest();
 
     /*
     에러처리
@@ -12,6 +12,8 @@ async function getTest() {
     -> controller에서 리턴 값에 따른 에러메시지 호출
     -> 성공일 경우 data controller에 넘겨주기
     */
+
+    console.log(testData)
     return testData;
 }
 

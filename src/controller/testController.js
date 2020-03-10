@@ -5,7 +5,7 @@ const testService = require('../service/testService');
 
 async function getTest(req, res) {  
     try {
-        // const request = req.params.value;
+        const request = req.params.value;
 
         // if(!request){
         //     errResponse(res, returnCode.BAD_REQUEST, 'null request');
